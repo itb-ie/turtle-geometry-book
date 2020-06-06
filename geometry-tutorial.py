@@ -69,7 +69,7 @@ im.save('euclid.gif')
 sc.addshape('euclid.gif')
 
 #call the first slide
-intro()
+script[0]()
 
 
 turtle.done()
