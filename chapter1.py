@@ -1,6 +1,6 @@
 import time
 import turtle
-from english_text import text
+from spanish_text import text
 
 
 class Chapter1():
