@@ -239,7 +239,7 @@ class Chapter1():
         pen.goto(turtle.Vec2D(-self.screen.window_width() // 2 + 700, self.screen.window_height() // 2 - 450))
         pen.write(self.text[self.text_pos], font=self.font2)
         self.text_pos += 1
-        time.sleep(self.sleep_time*3)
+        time.sleep(self.sleep_time)
 
         # print the next
         pen.goto(turtle.Vec2D(-self.screen.window_width() // 2 + 700, -self.screen.window_height() // 2 + 30))

@@ -3,6 +3,7 @@ from spanish_text import text
 from PIL import Image
 import time
 import chapter1
+import sys, os
 
 sleep_time = 3
 
@@ -10,6 +11,11 @@ font = ("Arial", 20, "normal")
 font2 = ("Arial", 15, "normal")
 font_title = ("Arial", 30, "normal")
 
+
+def resource_path(relative_path):
+    if hasattr(sys, '_MEIPASS'):
+        return os.path.join(sys._MEIPASS, relative_path)
+    return os.path.join(os.path.abspath("."), relative_path)
 
 def intro():
     pen = turtle.Turtle()
@@ -62,11 +68,11 @@ sc.setup(1600, 900)
 print(sc.window_height(), sc.window_width())
 sc.bgcolor("#BBBBBB")
 
-im = Image.open('Bogdan-poza-tr.png')
+im = Image.open(resource_path('Bogdan-poza-tr.png'))
 im.save('icon.gif')
 sc.addshape('icon.gif')
 
-im = Image.open('220px-Euklid-von-Alexandria_1.jpg')
+im = Image.open(resource_path('220px-Euklid-von-Alexandria_1.jpg'))
 im.save('euclid.gif')
 sc.addshape('euclid.gif')
 
