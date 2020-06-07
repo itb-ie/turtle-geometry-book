@@ -1,6 +1,7 @@
 text = {
     "welcome": "Welcome to my Geometry Tutorial.\nMy name is Ratman and we will learn geometry together",
     "next": "Please press 'space' to continue",
+    "end": "The end.Please press 'space' to exit",
     "chapter1": [
         " Chapter 1",
         "Fundamental objects in geometry: Plane, Points, Lines, Rays, Line Segments",

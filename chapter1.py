@@ -19,6 +19,7 @@ class Chapter1():
         self.text = text["chapter1"]
         self.text_pos = 0
         self.next = text["next"]
+        self.end = text["end"]
         return
 
 
@@ -240,10 +241,11 @@ class Chapter1():
         self.text_pos += 1
         time.sleep(self.sleep_time*3)
 
-
-        pen.goto(turtle.Vec2D(-self.screen.window_width() // 2 + 700, -self.screen.window_height() // 2 + 100))
+        # print the next
+        pen.goto(turtle.Vec2D(-self.screen.window_width() // 2 + 700, -self.screen.window_height() // 2 + 30))
         pen.color("black")
         pen.write(self.next, font=self.font2)
+
 
     def slide2(self):
         self.screen.clear()
@@ -333,10 +335,11 @@ class Chapter1():
         self.text_pos += 1
         time.sleep(self.sleep_time)
 
-
-        pen.goto(turtle.Vec2D(-self.screen.window_width() // 2 + 700, -self.screen.window_height() // 2 + 100))
+        # print the next
+        pen.goto(turtle.Vec2D(-self.screen.window_width() // 2 + 700, -self.screen.window_height() // 2 + 30))
         pen.color("black")
         pen.write(self.next, font=self.font2)
+
 
     def slide3(self):
         self.screen.clear()
@@ -457,11 +460,11 @@ class Chapter1():
         self.text_pos += 1
         time.sleep(self.sleep_time)
 
-
         # print the next
-        pen.goto(turtle.Vec2D(-self.screen.window_width() // 2 + 700, -self.screen.window_height() // 2 + 100))
+        pen.goto(turtle.Vec2D(-self.screen.window_width() // 2 + 700, -self.screen.window_height() // 2 + 30))
         pen.color("black")
         pen.write(self.next, font=self.font2)
+
 
     def slide4(self):
         self.screen.clear()
@@ -649,7 +652,8 @@ class Chapter1():
         # print the next
         pen.goto(turtle.Vec2D(-self.screen.window_width() // 2 + 700, -self.screen.window_height() // 2 + 30))
         pen.color("black")
-        pen.write(self.next, font=self.font2)
+        pen.write(self.end, font=self.font2)
+
 
     def slide_intro(self):
         # this is the intro slide

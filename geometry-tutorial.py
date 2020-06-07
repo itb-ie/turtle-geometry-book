@@ -8,6 +8,7 @@ sleep_time = 3
 
 font = ("Arial", 20, "normal")
 font2 = ("Arial", 15, "normal")
+font_title = ("Arial", 30, "normal")
 
 
 def intro():
@@ -15,8 +16,8 @@ def intro():
     pen.hideturtle()
     pen.penup()
     pen.color("blue")
-    pen.goto(turtle.Vec2D(-sc.window_width()//2 + 200, sc.window_height()//2-100))
-    pen.write(text["welcome"], font=font)
+    pen.goto(turtle.Vec2D(-sc.window_width()//2 + 200, sc.window_height()//2-200))
+    pen.write(text["welcome"], font=font_title)
 
     time.sleep(sleep_time)
     picture = turtle.Turtle()
@@ -57,7 +58,8 @@ def next_slide():
 
 
 sc = turtle.Screen()
-sc.setup(0.8, 0.8)
+sc.setup(1600, 900)
+print(sc.window_height(), sc.window_width())
 sc.bgcolor("#BBBBBB")
 
 im = Image.open('Bogdan-poza-tr.png')
