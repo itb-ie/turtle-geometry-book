@@ -29,7 +29,7 @@ class Chapter1():
         pen.pendown()
         pen.forward(600)
 
-        # draw the X
+        # draw the arrow and the X
         pos = pen.pos()
         pen.left(135)
         pen.forward(10)
@@ -58,12 +58,34 @@ class Chapter1():
         pen.back(10)
         pen.setheading(0)
         pen.penup()
-        pen.goto(pos[0] + 10, pos[1]-30)
+        pen.goto(pos[0] + 5, pos[1] - 30)
         pen.write("Y", font=self.font2)
 
         pen.setheading(90)
         pen.back(300)
         pen.write("0", font=self.font2)
+
+        # draw the units:
+        pen.goto(turtle.Vec2D(-self.screen.window_width() // 2 + 450, self.screen.window_height() // 2 - 535))
+        pen.setheading(0)
+        pen.forward(30)
+        pen.left(90)
+        pen.pendown()
+        pen.forward(10)
+        pen.penup()
+        cur_pos = pen.pos()
+        pen.goto(cur_pos[0] - 5, cur_pos[1]-35)
+        pen.write("1", font=self.font2)
+
+        pen.goto(turtle.Vec2D(-self.screen.window_width() // 2 + 445, self.screen.window_height() // 2 - 500))
+        pen.setheading(0)
+        pen.pendown()
+        pen.forward(10)
+        pen.penup()
+        cur_pos = pen.pos()
+        pen.goto(cur_pos[0] + 5, cur_pos[1] - 15)
+        pen.write("1", font=self.font2)
+
 
 
     def draw_line(self, pen, point1, point2):
