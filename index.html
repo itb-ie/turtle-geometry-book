@@ -76,11 +76,11 @@ l = 200
 h = 50
 
 # main body of the house
-pen.color("#ff0000", "#cc0000")
+pen.color("#ff0000")
 pen.begin_fill()
 draw_square(pen, 200)
 pen.end_fill()
-pen.color("#ff0000", "#990000")
+pen.color("#ff0000")
 pen.begin_fill()
 draw_roof(pen, 200, 50)
 pen.end_fill()
@@ -94,7 +94,7 @@ pen.right(180)
 pen.pendown()
 
 # the windows
-pen.color("#ff0000", "#aaffff")
+pen.color("#ff0000")
 pen.begin_fill()
 draw_square(pen, 50)
 pen.end_fill()
@@ -121,7 +121,7 @@ pen.left(90)
 pen.forward(70)
 
 # draw
-pen.color("#330000", "#770000")
+pen.color("#330000")
 pen.begin_fill()
 pen.pendown()
 pen.forward(60)
@@ -166,7 +166,7 @@ for i in range(36):
 # go make a tree
 pen.speed(1)
 pen.penup()
-pen.color("#330000", "#550000")
+pen.color("#330000")
 pen.begin_fill()
 pen.goto(-300, -l)
 pen.left(180)
@@ -181,7 +181,7 @@ pen.forward(20)
 pen.end_fill()
 
 
-pen.color("#22dd22", "#22dd22")
+pen.color("#22dd22")
 pen.begin_fill()
 pen.penup()
 pen.goto(-330, -l+140)
