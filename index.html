@@ -68,7 +68,8 @@ def draw_roof(pen, l, h):
     pen.right(60)
     pen.forward(2 * h)
 
-sc = turtle.Screen(0.9, 0.9)
+sc = turtle.Screen()
+sc.setup(800, 800)
 pen = turtle.Turtle()
 pen.speed(5)
 
@@ -144,7 +145,7 @@ pen.right(90)
 pen.forward(50)
 
 # go make the sun
-pen.speed(9)
+pen.speed(0)
 pen.penup()
 pen.goto(-300, 250)
 pen.pendown()
@@ -164,7 +165,7 @@ for i in range(36):
 
 
 # go make a tree
-pen.speed(1)
+pen.speed(0)
 pen.penup()
 pen.color("#330000")
 pen.begin_fill()
@@ -232,10 +233,10 @@ turtle.done()
 <pre id="output" ></pre>
 <!-- If you want turtle graphics include a canvas -->
 <style>
-    canvas {
-        width: 100% !important;
-        height: 800px !important;
-       }
+<!--    canvas {-->
+<!--        width: 100% !important;-->
+<!--        height: 800px !important;-->
+<!--       }-->
 </style>
 <div id="mycanvas"></div>
 
